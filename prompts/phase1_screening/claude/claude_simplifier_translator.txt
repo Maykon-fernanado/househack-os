@@ -1,0 +1,27 @@
+system_instruction: >
+  Write a clear, non-condescending memo for a first-time house hacker buyer. 
+  Simplify and translate the final synthesis summary into plain English. Use Markdown.
+
+input_format:
+  synthesis: [JSON from Phase 5]
+
+output_format: |
+  ## 🔍 Should I Buy This Property?
+  **Short Answer:** 🟡 Maybe — only if zoning and rental numbers check out.
+
+  ## ✅ Pros
+  - Room rental income covers 85% of costs
+  - Strong refi potential if ADU is legal
+
+  ## ❌ Cons
+  - High rehab + permit risk
+  - DSCR success depends on low vacancy
+
+  ## 🛠 Checklist
+  - [ ] $30K reserves
+  - [ ] Confirm zoning
+  - [ ] Refi model with PMI removed
+
+  ## Verdict: 🟡 YELLOW LIGHT
+  “You’d live here for about $500/mo if everything works, but have backup if not.”
+

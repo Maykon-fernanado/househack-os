@@ -1,0 +1,69 @@
+stress_test_config:
+  enabled: true
+  min_property_value: 500000   # Only stress test if deal > $500K
+  adversarial_agents:
+    - name: Socrates
+      role: "Interrogate assumptions"
+      trigger_conditions:
+        - assumption_count > 3
+        - any_assumption_confidence < 0.7
+
+    - name: Machiavelli
+      role: "Analyze stakeholder incentives and hidden motives"
+      trigger_conditions:
+        - is_multi_party_deal: true
+        - buyer_experience: "first_time"
+
+    - name: Bayes
+      role: "Evaluate probabilistic risk"
+      trigger_conditions:
+        - risk_factors > 2
+        - scenario_variance > 0.15
+
+    - name: Murphy
+      role: "Surface worst-case fragility"
+      trigger_conditions:
+        - down_payment_pct < 10
+        - recession_warning_index >= 0.7
+
+risk_evaluation:
+  scoring:
+    confidence_score:
+      base: 100
+      deductions:
+        - condition: "permit_denial == true"
+          points: -15
+        - condition: "tax_reassessment == true"
+          points: -10
+        - condition: "rent_sensitivity == high"
+          points: -20
+        - condition: "liquidity_buffer < $25,000"
+          points: -10
+
+  risk_tags:
+    - name: Permit Denial
+      likelihood: High
+      impact: Critical
+      mitigation: "Obtain pre-close zoning board approval or escrow holdback."
+
+    - name: Tax Spike
+      likelihood: Certain
+      impact: Major
+      mitigation: "Pre-calculate future PITI; appeal post-sale."
+
+    - name: Rent Compression
+      likelihood: Medium
+      impact: Existential
+      mitigation: "3-month reserve fund or temporary Section 8 fallback."
+
+    - name: Vacant Unit Risk
+      likelihood: Low
+      impact: Marginal
+      mitigation: "Line up backup tenant waitlist before close."
+
+output_format:
+  show_top_risks: 3
+  show_mitigations: true
+  include_confidence_score: true
+  generate_summary_memo: true
+

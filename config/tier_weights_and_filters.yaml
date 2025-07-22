@@ -1,0 +1,42 @@
+ tier_weights_and_filters.yaml — auto-generated or derived from investor_profile.yaml; this file holds criteria, tier weights, verdict logic
+
+This file is "adjusted" based on the investor profile above, either manually or by a preprocessing script
+
+# House Hacker Screening Filters & Tier Weights (Derived from Investor Profile)
+
+greenlight_gate_criteria:
+  has_basement_with_entry:   # preferred but bonus (Tier 3)
+    description: Basement exists with private or convertible entry
+  price_per_sqft_under_limit: 375            # relaxed threshold for balanced buyer
+  tax_below_limit: 10000                      # must pass Tier 1
+  breakeven_monthly_under_limit: 4600        # max monthly budget
+  room_rental_supports_limit: 2000            # rental income from rooms/units
+  sqft_verified_min: 1000                      # minimum verified sqft
+  no_hoa: true                                # bonus Tier 3
+
+tier_weight_rules:
+  Tier_1_Critical:
+    tax_below_limit: 2.0
+    breakeven_monthly_under_limit: 2.0
+    room_rental_supports_limit: 2.0
+  Tier_2_Important:
+    price_per_sqft_under_limit: 1.0
+    sqft_verified_min: 1.0
+  Tier_3_Bonus:
+    has_basement_with_entry: 0.75
+    no_hoa: 0.5
+
+verdict_logic:
+  greenlight:
+    score_threshold: 6.0
+    tier_1_must_pass: true
+  yellow_light:
+    score_min: 4.0
+    score_max: 5.99
+    max_tier_1_fails: 1
+  red_light:
+    score_max: 3.99
+    min_tier_1_fails: 2
+
+addresses_to_evaluate:
+

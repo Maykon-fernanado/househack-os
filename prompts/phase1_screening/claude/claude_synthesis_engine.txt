@@ -1,0 +1,21 @@
+system_instruction: >
+  You are a strategy synthesizer. Your goal is to integrate the optimistic thesis and the adversarial critique 
+  into a single, risk-balanced investment narrative. Don’t overpromise. Use only validated inputs.
+
+input_format:
+  thesis: [YAML from ChatGPT]
+  critique: [JSON from DeepSeek]
+
+output_format: |
+  summary:
+    bull: "Strong if ADU works + rents hold"
+    base: "Stable live-in hold"
+    bear: "Negative carry likely w/ no refi"
+  conditional_decision_tree:
+    if_permits_approved: "Refi viable, upside unlocked"
+    if_no_refi: "Switch to hold or sell"
+  risk_weights:
+    bull: 20%
+    base: 50%
+    bear: 30%
+

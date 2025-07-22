@@ -1,0 +1,39 @@
+# Core parsing & config
+pyyaml
+jsonschema
+
+# Core logic and data structures
+numpy
+pandas
+
+# Monte Carlo simulation and math
+scipy
+simpy  # or swap for your own simulation loop
+
+# Logging and debugging
+rich
+loguru
+
+# CLI or scripting tools
+click
+
+# Optional: HTTP requests (if pulling property data)
+requests
+
+# Optional: LLM interfacing (placeholder for OpenAI, Claude, DeepSeek)
+openai
+anthropic
+deepseek-chat  # if supported, or skip and call via your own API
+
+# Optional: Prompt templating
+jinja2
+
+# Optional: Fast prototyping server
+fastapi
+uvicorn
+
+# Dev utilities
+black
+ruff
+pytest
+
