@@ -1,12 +1,12 @@
-# House Hack OS: Architecting Machine Thought
+# House Hack OS: Architecting Machine Thought – The YAJPH Stack
 
 > House Hack OS is an experimental reasoning engine that simulates real estate investment decisions using a multi-agent architecture built on YAML, Python, and LLMs. It’s the first stack built for real-time, self-modifying thought.
 
 **"Build with agents. Think with reason. Decide with confidence."**
 
-House Hack OS is more than a real estate investment tool; it is an exploration into a new paradigm of computational reasoning. This project represents a foundational invention in how we organize and apply artificial intelligence to complex, human-centric decision-making.
+House Hack OS is more than a real estate investment tool; it is an exploration into a new paradigm of computational reasoning. This project represents a **foundational invention** in how we organize and apply artificial intelligence to complex, human-centric decision-making. It introduces the **YAJPH Stack (pronounced "yah-gif")**, a novel architectural blueprint for AI-native applications that bridges human intent with autonomous machine intelligence.
 
-This document delves into the core philosophical tenets that underpin House Hack OS, detailing the invention and its implications.
+This document delves into the core philosophical tenets that underpin House Hack OS, detailing this invention and its profound implications for the future of software development.
 
 ## Try It Now — Simulate a Deal with ChatGPT
 
@@ -115,6 +115,19 @@ This collaborative human-AI calculus framework supports self-healing simulations
 Traditional technology stacks like MEAN or LAMP were designed for static applications with fixed workflows. YAJPH is purpose-built for AI-human collaborative reasoning, enabling real-time, adaptive systems where both humans and AI agents can jointly modify code and logic.
 
 This makes YAJPH the first software architecture engineered for self-modifying, real-time cognitive applications.
+---
+
+## The Problem: The Need for Adaptive Reasoning
+
+Traditional software stacks were built for static, predictable workflows. As AI becomes central to complex decision-making, we face a fundamental challenge: **how do we build applications that can reason, adapt, and even self-modify their logic in real-time based on dynamic inputs and evolving goals?**
+
+* **Static Logic Limitations:** Current applications struggle with highly dynamic, context-dependent problems like financial forecasting or strategic planning, often relying on brittle, pre-programmed rules.
+* **AI as a Black Box:** Integrating LLMs typically involves simple API calls, treating them as mere "assistants" rather than leveraging their full potential for autonomous, collaborative reasoning.
+* **Lack of Transparency:** Decision-making logic often remains opaque, making it difficult for users to understand, trust, or modify the underlying reasoning.
+
+This is the gap YAJPH fills.
+
+---
 | Layer | Name          | Function               | Description                                                                                                                                                                                    |
 | ----- | ------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Y** | **YAML**      | **Intent Layer**       | Human-readable configurations that explicitly define investor goals, preferences, and behavioral context. Enables **human code adjustments** and establishes transparent value contracts.      |
