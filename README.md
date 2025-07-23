@@ -1,5 +1,4 @@
-# House Hack OS: Architecting Machine Thought 
-– The YAJPH Stack
+# House Hack OS: Architecting Machine Thought | The YAJPH Stack
 
 > House Hack OS is an experimental reasoning engine that simulates real estate investment decisions using a multi-agent architecture built on YAML, Python, and LLMs. It’s the first stack built for real-time, self-modifying thought.
 
